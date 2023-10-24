@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="5dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardElevation="0.7dp">
+
+    <io.rmiri.skeleton.SkeletonGroup
+        android:id="@+id/skeletonGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        Skeleton:SK_BackgroundViewsColor="#f8f8f8"
+        Skeleton:SK_animationAutoStart="true"
+        Skeleton:SK_animationDirection="LTR"
+        Skeleton:SK_animationDuration="1000"
+        Skeleton:SK_animationFinishType="gradient"
+        Skeleton:SK_animationNormalType="gradient"
+        Skeleton:SK_backgroundMainColor="@android:color/transparent"
+        Skeleton:SK_highLightColor="#f2f2f2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_3sdp">
+
+                <io.rmiri.skeleton.SkeletonView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    Skeleton:SK_cornerRadius="10dp"
+                    Skeleton:SK_padding="0dp"
+                    Skeleton:SK_shapeType="rect">
+
+                    <ImageView
+                        android:id="@+id/category_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:layout_marginLeft="@dimen/_7sdp"
+                        android:layout_marginRight="@dimen/_7sdp"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/img_name_register" />
+
+                </io.rmiri.skeleton.SkeletonView>
+            </LinearLayout>
+
+            <TextView
+                fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                android:id="@+id/category_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:minLines="2"
+                android:paddingLeft="@dimen/_5sdp"
+                android:paddingRight="@dimen/_5sdp"
+                android:text="لورم ایپسوم"
+                android:textColor="#97000741"
+                android:textSize="@dimen/_10ssp"
+                tools:ignore="HardcodedText,MissingPrefix" />
+
+        </LinearLayout>
+
+    </io.rmiri.skeleton.SkeletonGroup>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+<item android:drawable="@drawable/img_favorite_location_background" />
+<item>
+    <shape android:shape="rectangle">
+        <corners android:radius="5dp" />
+        <stroke android:width="1.5dp" android:color="@color/colorPrimary" />
+        <padding android:bottom="8dp" android:left="8dp" android:right="8dp" android:top="8dp" />
+    </shape>
+</item>
+</layer-list>

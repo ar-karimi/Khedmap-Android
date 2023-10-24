@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "6964094652581",
+    "firebase_url": "https://khedmapuser-app.firebaseio.com",
+    "project_id": "khedmapuser-app",
+    "storage_bucket": "khedmapuser-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:64450781:android:0375656229af15a78",
+        "android_client_info": {
+          "package_name": "com.khedmap.khedmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "6556409450781-gdkan4tkia3l2culmp3i2fufndrjilm2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khedmap.khedmap",
+            "certificate_hash": "d94cc6ec53f27c3a5480e254bzcf8c0ac9d16e76a9"
+          }
+        },
+        {
+          "client_id": "696945dd0781-i57qa5mgs7qeasdjo88bqjhvcqa9htege0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaS7das1TYZYqgSjlWx6rJN1SBTkOsz_b0ys"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "44640955450781-i57qa5mgs7qejo88bczxqjhvcqa9htege0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

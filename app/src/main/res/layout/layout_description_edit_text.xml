@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_edit_text">
+
+    <EditText
+        android:id="@+id/description_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:maxLength="500"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:hint="توضیح خود را وارد کنید ..."
+        android:textColor="#333333"
+        android:textSize="@dimen/_12ssp"
+        tools:ignore="LabelFor" />
+
+</LinearLayout>

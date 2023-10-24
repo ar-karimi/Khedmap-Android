@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu">
+
+    <item
+        android:id="@+id/navigation_menu_home"
+        android:icon="@drawable/ic_navigation_menu_home"
+        android:title="خانه"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/navigation_menu_profile"
+        android:icon="@drawable/ic_navigation_menu_profile"
+        android:title="پروفایل"
+        tools:ignore="HardcodedText" />
+    <!--
+    <item
+        android:id="@+id/navigation_menu_notifications"
+        android:icon="@mipmap/ic_person"
+        android:title="اعلان‌ها" />-->
+    <item
+        android:id="@+id/navigation_menu_order_management"
+        android:icon="@drawable/ic_navigation_menu_order_management"
+        android:title="مدیریت سفارش‌ها"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_increase_credit"
+        android:icon="@drawable/ic_navigation_menu_increase_credit"
+        android:title="افزایش اعتبار"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_favorite_locations"
+        android:icon="@drawable/ic_navigation_menu_favorite_location"
+        android:title="مکان‌های مورد علاقه"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_favorite_experts"
+        android:icon="@drawable/ic_navigation_menu_favorite_expert"
+        android:title="کارشناسان مورد علاقه"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_invite_friends"
+        android:icon="@drawable/ic_navigation_menu_invite_friends"
+        android:title="دعوت دوستان"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_im_expert"
+        android:icon="@drawable/ic_navigation_menu_im_expert"
+        android:title="من کارشناس هستم"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_support"
+        android:icon="@drawable/ic_navigation_menu_support"
+        android:title="تماس با پشتیبانی"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_about_us"
+        android:icon="@drawable/ic_navigation_menu_about_us"
+        android:title="درباره ما"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/navigation_menu_logout"
+        android:icon="@drawable/ic_navigation_menu_logout"
+        android:title="خروج"
+        tools:ignore="HardcodedText" />
+
+</menu>

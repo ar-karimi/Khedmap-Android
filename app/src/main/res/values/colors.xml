@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#E65000</color>
+    <color name="colorAccent">#FF5B00</color>
+
+
+    //Custom colors
+
+    <color name="colorPrimary">#FF5B00</color>
+
+    <!-- dots inactive color -->
+    <color name="dot_inactive">#c9c9c9</color>
+
+    <!-- dots active color -->
+    <color name="dot_active">#FF5B00</color>
+
+    <color name="slide_desc">#a1a1a1</color>
+
+    <color name="colorGrayText">#7e7e7e</color>
+
+    <color name="colorStatusBar">#499d9d9d</color> <!--//by Default use color Primary Dark to change Status Color-->
+
+    <color name="colorTransparent">@android:color/transparent</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+
+    <color name="colorMainBackground">#F4F5F4</color>
+
+    <color name="selectedButtonTextColor">#777777</color>
+    <color name="noSelectedButtonTextColor">#FFFFFF</color>
+
+    <color name="colorDivider">#EEEEEE</color>
+
+    <color name="colorTeammateDivider">#a7a7a7</color>
+    
+    <color name="colorToolbarBackground">#FF5B00</color>
+    <color name="colorToolbarTitle">#FFFFFF</color>
+
+    <color name="colorGreenVerify">#4CC875</color>
+    <color name="colorRedCancel">#F44336</color>
+
+</resources>

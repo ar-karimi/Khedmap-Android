@@ -1,0 +1,123 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.khedmap.khedmap"
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 14
+        versionName "1.0.7"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary true
+        useLibrary 'org.apache.http.legacy'
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.google.android.gms:play-services-base:16.0.1'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.intuit.sdp:sdp-android:1.0.5'
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+
+    //Intro Slider
+    implementation 'com.github.apl-devs:appintro:v4.2.3'
+
+    //change font
+    implementation 'io.github.inflationx:calligraphy3:3.0.0'
+    implementation 'io.github.inflationx:viewpump:1.0.0'
+
+    //CountDown View
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+
+    //Image picker and Cropper
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.0'
+    implementation 'com.android.support:exifinterface:28.0.0'
+
+    //Rounded ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Gender segmented Button
+    implementation 'info.hoang8f:android-segmented:1.0.6'
+
+    //Runtime Permission getter
+    implementation 'com.karumi:dexter:5.0.0'
+
+    //Google Play Service API for Effective Phone Verification And Fix Protocol Problem in Older Android (Code in InitApplication)
+    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+
+    //http request Library , volley Plus for upload image
+    implementation 'dev.dworks.libs:volleyplus:0.1.4'
+
+    //Dialog also add uses-sdk in manifest
+    implementation 'com.github.Shashank02051997:FancyGifDialog-Android:1.1'
+
+    //ProgressBar
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.4.2'
+
+    //Dagger2
+    implementation 'com.google.dagger:dagger:2.16'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.13'
+
+    // Slider
+    implementation 'com.ss.bannerslider:bannerslider:2.0.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Lottie Animation
+    implementation 'com.airbnb.android:lottie:2.6.0-beta19'
+
+    //BottomSheet
+    implementation 'org.michaelbel:bottomsheet:1.2.3'
+
+    //Loader view
+    implementation 'com.github.rasoulmiri:Skeleton:v1.0.9'
+
+    //view animator
+    implementation 'com.github.florent37:viewanimator:1.1.0'
+
+    //Pusher Notification
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.pusher:push-notifications-android:1.4.0'
+
+    //Alert Dialog
+    implementation project(':hugenetdialog')
+
+    //Map
+    implementation "com.google.android.gms:play-services-location:16.0.0"
+
+    //Image Compressor
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //Multi Dex
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //Crashlytics
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+
+    //First tour guide
+    implementation 'com.github.amlcurran.showcaseview:library:5.4.3'
+
+}
+
+
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'io.fabric' /*for crashlytics*/

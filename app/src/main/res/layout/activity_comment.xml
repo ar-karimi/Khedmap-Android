@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:layoutDirection="rtl"
+    tools:context=".Order.View.CommentActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbarBackground">
+
+            <ImageView
+                android:id="@+id/ic_skip"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_skip"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="نظر شما در مورد کارشناس"
+                android:textColor="@color/colorToolbarTitle"
+                android:textSize="@dimen/_14ssp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_60sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/expert_name"
+                fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="نام کارشناس"
+                android:textColor="#4D4D4D"
+                android:textSize="@dimen/_15ssp"
+                tools:ignore="HardcodedText,MissingPrefix" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@color/colorTransparent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="@dimen/_38sdp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="2dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="@dimen/_60sdp"
+                            android:text="چقدر از کار کارشناس رضایت داشتید؟"
+                            android:textColor="#4D4D4D"
+                            android:textSize="@dimen/_13ssp"
+                            tools:ignore="HardcodedText,MissingPrefix" />
+
+                        <RatingBar
+                            android:id="@+id/rating_bar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_100sdp"
+                            android:stepSize="1"
+                            android:theme="@style/RatingBar"/>
+
+
+                    </android.support.v7.widget.CardView>
+                </FrameLayout>
+
+                <io.rmiri.skeleton.SkeletonGroup
+                    android:id="@+id/skeletonGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    app:SK_BackgroundViewsColor="#ececec"
+                    app:SK_animationAutoStart="true"
+                    app:SK_animationDirection="LTR"
+                    app:SK_animationDuration="1000"
+                    app:SK_animationFinishType="gradient"
+                    app:SK_animationNormalType="gradient"
+                    app:SK_backgroundMainColor="@android:color/transparent"
+                    app:SK_highLightColor="#e4e4e4">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_77sdp"
+                        android:layout_height="@dimen/_77sdp"
+                        android:layout_gravity="center">
+
+                        <io.rmiri.skeleton.SkeletonView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:SK_cornerRadius="70dp"
+                            app:SK_padding="0dp"
+                            app:SK_shapeType="rect">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/expert_avatar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/profile_pic_anonymous"
+                                app:riv_border_color="@color/colorPrimary"
+                                app:riv_border_width="2dip"
+                                app:riv_corner_radius="100dip"
+                                tools:ignore="RtlHardcoded" />
+
+                        </io.rmiri.skeleton.SkeletonView>
+                    </LinearLayout>
+                </io.rmiri.skeleton.SkeletonGroup>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/round_edit_text">
+
+                <EditText
+                    android:id="@+id/comment_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_22sdp"
+                    android:layout_marginRight="@dimen/_22sdp"
+                    android:background="@color/colorWhite"
+                    android:gravity="top|right"
+                    android:hint="نظر شما"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="7dp"
+                    android:maxLength="250"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:textColor="#333333"
+                    android:textSize="@dimen/_12ssp"
+                    tools:ignore="HardcodedText,LabelFor,RtlHardcoded" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorMainBackground"
+        android:paddingBottom="16dp">
+
+        <Button
+            android:id="@+id/submit_button"
+            fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/round_button_without_shadow"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:text="ثبت نظر"
+            android:textColor="@android:color/white"
+            tools:ignore="HardcodedText,MissingPrefix" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

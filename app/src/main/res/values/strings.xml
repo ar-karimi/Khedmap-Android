@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">خدمپ</string>
+
+    <string name="start">"شروع"</string>
+    <string name="slide_1_title">"راهکاری برای حل مشکلات"</string>
+    <string name="slide_2_title">"کارشناسان مجرب"</string>
+    <string name="title_activity_get_order_date_time">GetOrderDateTimeActivity</string>
+
+    <string name="fragment_suggestions">"پیشنهادها"</string>
+    <string name="fragment_discounts">"تخفیف‌ها"</string>
+
+    <string name="default_notification_channel_id">fcm_default_channel</string>
+</resources>

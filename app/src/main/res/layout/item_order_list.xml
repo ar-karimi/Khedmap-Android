@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="12dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="12dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layoutDirection="rtl"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="0.7dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_circle"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/subcategory"
+                fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="#424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                tools:ignore="MissingPrefix,RtlHardcoded"
+                tools:text="عنوان سفارش" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_district"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_title"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/_13sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_status"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/status"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="#424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                tools:ignore="RtlHardcoded"
+                tools:text="تهران−شهرری" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_district"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_vertical"
+                app:srcCompat="@drawable/ic_location"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/address"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="#424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                tools:ignore="RtlHardcoded"
+                tools:text="تهران−شهرری" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_serviceTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_location"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:adjustViewBounds="true"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_time"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/service_time"
+                android:textSize="@dimen/_11ssp"
+                android:textColor="#424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                tools:ignore="RtlHardcoded"
+                tools:text="پنجشنبه ساعت 2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_suggestions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignRight="@id/ll_time"
+            android:background="@drawable/shape_suggestions_count_background"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="8dp"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:textSize="@dimen/_10ssp"
+                android:textColor="#424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="پیشنهادات : "
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/number_of_suggestions"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="#424242"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="4dp"
+                tools:ignore="RtlHardcoded"
+                tools:text="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_suggestions"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/shape_time_background"
+            android:gravity="center"
+            android:minWidth="@dimen/_85sdp"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            tools:ignore="RtlHardcoded">
+
+            <TextView
+                android:id="@+id/create"
+                android:textSize="@dimen/_10ssp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                tools:ignore="RtlHardcoded"
+                tools:text="۳ روز پیش" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

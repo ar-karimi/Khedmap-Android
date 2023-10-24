@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMainBackground"
+    android:layoutDirection="rtl"
+    tools:context=".Order.View.CommentActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@color/colorPrimary" />
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorToolbarBackground"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                app:srcCompat="@drawable/ic_back"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="پروفایل"
+                android:textColor="@color/colorToolbarTitle"
+                android:textSize="@dimen/_14ssp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/_60sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@color/colorTransparent"
+                tools:ignore="UselessParent">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="@dimen/_38sdp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_40sdp"
+                            android:orientation="vertical"
+                            android:padding="@dimen/_14sdp">
+
+                            <TextView
+                                android:id="@+id/edit_profile_pic_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/round_button_profile_buttons"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:paddingLeft="@dimen/_10sdp"
+                                android:paddingTop="@dimen/_5sdp"
+                                android:paddingRight="@dimen/_10sdp"
+                                android:paddingBottom="@dimen/_5sdp"
+                                android:text="ویرایش عکس"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/_9ssp"
+                                tools:ignore="HardcodedText" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal"
+                                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/ic_profile_name"
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/ic_person_solid_primary_color"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:id="@+id/profile_name"
+                                    fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_toLeftOf="@+id/ic_profile_name"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="نام"
+                                    android:textColor="#424242"
+                                    android:textSize="@dimen/_11ssp"
+                                    tools:ignore="HardcodedText,MissingPrefix,RtlHardcoded" />
+
+                                <ImageView
+                                    android:id="@+id/ic_edit_profile_name"
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_1sdp"
+                                    app:srcCompat="@drawable/ic_edit"
+                                    tools:ignore="ContentDescription" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_18sdp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal"
+                                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/ic_profile_family"
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/ic_person_solid_primary_color"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:id="@+id/profile_family"
+                                    fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_toLeftOf="@+id/ic_profile_family"
+                                    android:ellipsize="end"
+                                    android:maxLines="1"
+                                    android:text="نام خانوادگی"
+                                    android:textColor="#424242"
+                                    android:textSize="@dimen/_11ssp"
+                                    tools:ignore="HardcodedText,MissingPrefix,RtlHardcoded" />
+
+                                <ImageView
+                                    android:id="@+id/ic_edit_profile_family"
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:padding="@dimen/_1sdp"
+                                    app:srcCompat="@drawable/ic_edit"
+                                    tools:ignore="ContentDescription" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_18sdp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal"
+                                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/ic_mobile"
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/ic_mobile_primary_color"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:id="@+id/mobile"
+                                    fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_toLeftOf="@+id/ic_mobile"
+                                    android:text="شماره موبایل"
+                                    android:textColor="#424242"
+                                    android:textSize="@dimen/_11ssp"
+                                    tools:ignore="HardcodedText,MissingPrefix,RtlHardcoded" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_18sdp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal"
+                                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/ic_credit"
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/ic_money"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    android:id="@+id/credit"
+                                    fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_toLeftOf="@+id/ic_credit"
+                                    android:text="0 تومان"
+                                    android:textColor="#424242"
+                                    android:textSize="@dimen/_11ssp"
+                                    tools:ignore="HardcodedText,MissingPrefix,RtlHardcoded" />
+
+                                <TextView
+                                    android:id="@+id/add_credit_button"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/round_button_profile_buttons"
+                                    android:clickable="true"
+                                    android:focusable="true"
+                                    android:foreground="?android:attr/selectableItemBackground"
+                                    android:paddingLeft="@dimen/_10sdp"
+                                    android:paddingTop="@dimen/_5sdp"
+                                    android:paddingRight="@dimen/_10sdp"
+                                    android:paddingBottom="@dimen/_5sdp"
+                                    android:text="افزایش اعتبار"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="@dimen/_9ssp"
+                                    tools:ignore="HardcodedText" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_18sdp"
+                                android:layout_marginRight="10dp"
+                                android:orientation="horizontal"
+                                tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                                <ImageView
+                                    android:id="@+id/ic_gender"
+                                    android:layout_width="@dimen/_19sdp"
+                                    android:layout_height="@dimen/_19sdp"
+                                    android:layout_centerVertical="true"
+                                    app:srcCompat="@drawable/ic_gender"
+                                    tools:ignore="ContentDescription" />
+
+                                <TextView
+                                    fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_toLeftOf="@+id/ic_gender"
+                                    android:text="جنسیت"
+                                    android:textColor="#424242"
+                                    android:textSize="@dimen/_11ssp"
+                                    tools:ignore="HardcodedText,MissingPrefix,RtlHardcoded" />
+
+                            </RelativeLayout>
+
+                            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/gender_switch"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="@dimen/_15sdp"
+                                android:layoutDirection="ltr"
+                                android:orientation="horizontal"
+                                segmentedgroup:sc_border_width="2dp"
+                                segmentedgroup:sc_checked_text_color="#e9e8e8"
+                                segmentedgroup:sc_corner_radius="10dp"
+                                segmentedgroup:sc_tint_color="@color/colorPrimary">
+
+                                <RadioButton
+                                    android:id="@+id/female_button"
+                                    style="@style/RadioButton"
+                                    android:layout_width="@dimen/_63sdp"
+                                    android:layout_height="@dimen/_26sdp"
+                                    android:text="زن"
+                                    android:textSize="@dimen/_9ssp"
+                                    tools:ignore="HardcodedText" />
+
+                                <RadioButton
+                                    android:id="@+id/not_specified_button"
+                                    style="@style/RadioButton"
+                                    android:layout_width="@dimen/_63sdp"
+                                    android:layout_height="@dimen/_26sdp"
+                                    android:checked="true"
+                                    android:text="انتخاب نشده"
+                                    android:textSize="@dimen/_9ssp"
+                                    tools:ignore="HardcodedText" />
+
+                                <RadioButton
+                                    android:id="@+id/male_button"
+                                    style="@style/RadioButton"
+                                    android:layout_width="@dimen/_63sdp"
+                                    android:layout_height="@dimen/_26sdp"
+                                    android:text="مرد"
+                                    android:textSize="@dimen/_9ssp"
+                                    tools:ignore="HardcodedText" />
+
+                            </info.hoang8f.android.segmented.SegmentedGroup>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </FrameLayout>
+
+                <io.rmiri.skeleton.SkeletonGroup
+                    android:id="@+id/skeletonGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|center_horizontal"
+                    app:SK_BackgroundViewsColor="#ececec"
+                    app:SK_animationAutoStart="true"
+                    app:SK_animationDirection="LTR"
+                    app:SK_animationDuration="1000"
+                    app:SK_animationFinishType="gradient"
+                    app:SK_animationNormalType="gradient"
+                    app:SK_backgroundMainColor="@android:color/transparent"
+                    app:SK_highLightColor="#e4e4e4">
+
+                    <LinearLayout
+                        android:layout_width="@dimen/_85sdp"
+                        android:layout_height="@dimen/_85sdp"
+                        android:layout_gravity="center">
+
+                        <io.rmiri.skeleton.SkeletonView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            app:SK_cornerRadius="70dp"
+                            app:SK_padding="0dp"
+                            app:SK_shapeType="rect">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/profile_pic"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="2dp"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/profile_pic_anonymous"
+                                app:riv_border_color="#E6E6E6"
+                                app:riv_border_width="3dip"
+                                app:riv_corner_radius="100dip"
+                                tools:ignore="RtlHardcoded" />
+
+                        </io.rmiri.skeleton.SkeletonView>
+                    </LinearLayout>
+                </io.rmiri.skeleton.SkeletonGroup>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/submit_button"
+        fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/round_button_without_shadow"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="ثبت نهایی تغییرات"
+        android:textColor="@android:color/white"
+        tools:ignore="HardcodedText,MissingPrefix" />
+
+
+    <FrameLayout
+        android:id="@+id/loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

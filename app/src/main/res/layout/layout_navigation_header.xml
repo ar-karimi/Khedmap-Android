@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_130sdp"
+    android:layoutDirection="rtl">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/img_navigation_header" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_toLeftOf="@id/profile_pic"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/profile_name"
+            fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نام کاربر"
+            android:textColor="#C0392B"
+            android:textSize="@dimen/_13ssp"
+            tools:ignore="HardcodedText,MissingPrefix" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="اعتبار :"
+                android:textColor="#C0392B"
+                android:textSize="@dimen/_11ssp"
+                tools:ignore="HardcodedText,MissingPrefix" />
+
+            <TextView
+                android:id="@+id/credit"
+                fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_3sdp"
+                android:text="5000 تومان"
+                android:textColor="#C0392B"
+                android:textSize="@dimen/_11ssp"
+                tools:ignore="HardcodedText,MissingPrefix,RtlHardcoded,RtlSymmetry" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/profile_pic"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/profile_pic_anonymous"
+        app:riv_border_color="#C0392B"
+        app:riv_border_width="3dip"
+        app:riv_corner_radius="100dip"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

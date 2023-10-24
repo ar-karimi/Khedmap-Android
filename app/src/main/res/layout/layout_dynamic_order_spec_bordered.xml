@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/bordered_text_view"
+        fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Medium.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:background="@drawable/bordered_warning_background"
+        android:textAlignment="center"
+        android:lineSpacingExtra="5dp"
+        android:textColor="#F39C12"
+        android:textSize="@dimen/_11ssp"
+        tools:ignore="MissingPrefix" />
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_72sdp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="7dp"
+    android:layout_marginRight="7dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/bordered_favorite_location_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:padding="@dimen/_12sdp">
+
+    <TextView
+        fontPath="IRANSansMobileFonts/IRANSansMobile(FaNum)_Bold.ttf"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:gravity="center"
+        android:text="خانه"
+        android:textColor="#C0392B"
+        android:textSize="@dimen/_10ssp"
+        tools:ignore="HardcodedText,MissingPrefix"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"/>
+
+    <TextView
+        android:id="@+id/district"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center"
+        android:text="شریعتی"
+        android:textSize="@dimen/_9ssp"
+        android:textColor="#333333"
+        tools:ignore="HardcodedText" />
+
+
+</LinearLayout>

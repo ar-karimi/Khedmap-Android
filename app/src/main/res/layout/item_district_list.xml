@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="6dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="6dp"
+    android:background="@drawable/bordered_district_background"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:padding="@dimen/_4sdp">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.1"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/ic_district_title"
+        tools:ignore="ContentDescription,RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/district_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_weight="0.9"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="نام محله"
+        android:textColor="#4D4D4D"
+        android:textSize="@dimen/_13ssp"
+        tools:ignore="HardcodedText,RtlHardcoded" />
+
+</LinearLayout>

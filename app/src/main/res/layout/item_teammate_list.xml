@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:Skeleton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp"
+    android:padding="4dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <io.rmiri.skeleton.SkeletonGroup
+            android:id="@+id/skeletonGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            Skeleton:SK_BackgroundViewsColor="#f8f8f8"
+            Skeleton:SK_animationAutoStart="true"
+            Skeleton:SK_animationDirection="LTR"
+            Skeleton:SK_animationDuration="1000"
+            Skeleton:SK_animationFinishType="gradient"
+            Skeleton:SK_animationNormalType="gradient"
+            Skeleton:SK_backgroundMainColor="@android:color/transparent"
+            Skeleton:SK_highLightColor="#f2f2f2">
+
+            <LinearLayout
+                android:layout_width="@dimen/_53sdp"
+                android:layout_height="@dimen/_53sdp"
+                android:layout_gravity="center">
+
+                <io.rmiri.skeleton.SkeletonView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    Skeleton:SK_cornerRadius="70dp"
+                    Skeleton:SK_padding="0dp"
+                    Skeleton:SK_shapeType="rect">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/teammate_avatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/profile_pic_anonymous"
+                        app:riv_border_color="@color/colorPrimary"
+                        app:riv_border_width="2dip"
+                        app:riv_corner_radius="100dip"
+                        tools:ignore="RtlHardcoded" />
+
+                </io.rmiri.skeleton.SkeletonView>
+            </LinearLayout>
+        </io.rmiri.skeleton.SkeletonGroup>
+
+        <TextView
+            android:id="@+id/teammate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="نام همراه"
+            android:textColor="#212121"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimary" />
+
+</LinearLayout>

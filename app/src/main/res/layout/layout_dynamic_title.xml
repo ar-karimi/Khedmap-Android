@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:layoutDirection="rtl"
+    android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="16dp"
+    tools:ignore="RtlHardcoded,RtlSymmetry,UseCompoundDrawables">
+
+    <ImageView
+        android:padding="2dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/ic_circle"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/dynamic_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="4dp"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        tools:text="متن سوال" />
+
+
+</LinearLayout>
